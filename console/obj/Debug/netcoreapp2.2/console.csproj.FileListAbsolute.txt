@@ -1,0 +1,10 @@
+F:\project\DockerPro\console\bin\Debug\netcoreapp2.2\console.deps.json
+F:\project\DockerPro\console\bin\Debug\netcoreapp2.2\console.runtimeconfig.json
+F:\project\DockerPro\console\bin\Debug\netcoreapp2.2\console.runtimeconfig.dev.json
+F:\project\DockerPro\console\bin\Debug\netcoreapp2.2\console.dll
+F:\project\DockerPro\console\bin\Debug\netcoreapp2.2\console.pdb
+F:\project\DockerPro\console\obj\Debug\netcoreapp2.2\console.csproj.CoreCompileInputs.cache
+F:\project\DockerPro\console\obj\Debug\netcoreapp2.2\console.AssemblyInfoInputs.cache
+F:\project\DockerPro\console\obj\Debug\netcoreapp2.2\console.AssemblyInfo.cs
+F:\project\DockerPro\console\obj\Debug\netcoreapp2.2\console.dll
+F:\project\DockerPro\console\obj\Debug\netcoreapp2.2\console.pdb

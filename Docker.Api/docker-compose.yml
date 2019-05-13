@@ -1,0 +1,54 @@
+﻿version: '3'
+
+services:
+  db:
+    image: mysql
+    container_name: 'mysql01'
+    command: --character-set-server=utf8 --collation-server=utf8_general_ci
+    restart: always
+    ports:
+      - '3307:3306'
+    environment:
+      MYSQL_USER: test
+      MYSQL_PASSWORD: 123456
+      MYSQL_PASSWORD_HOST: '%'
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_ROOT_HOST: '%'
+    volumes:
+      - /root/docker/mysql02/my.cnf:/etc/my.cnf
+      - /root/docker/mysql02/data:/var/lib/mysql
+      - /root/docker/mysql02/SqlInit:/docker-entrypoint-initdb.d
+  redis:
+    image: redis
+    container_name: 'redis'
+    command: redis-server /usr/local/etc/redis/redis.conf 
+    restart: always
+    ports:
+      - '6379:6379'
+    environment:
+      requirepass: 123456 #redis密码
+      appendonly: 'yes' #redis是否持久化
+    volumes:
+      - /root/docker/redis/conf/redis.conf:/usr/local/etc/redis/redis.conf
+      - /root/docker/redis/data:/data #这里会保存持久化数据
+  jexus:
+    image: byniqing/jexus
+    container_name: 'jexus'
+     ports:
+      - '8005:80'
+    restart: always
+    volumes:
+      - /root/docker/jexus/siteconf:/usr/jexus/siteconf
+    depends_on:
+      - web
+  web:
+    build: . #会执行当前目录下面的dockerfile文件
+    container_name: 'api3' #容器名称
+    restart: always # web依赖于db，如果web比db启动快。就连接不上db导致web异常，web容器启动失败，restart可以不断重试，直到连接为止
+    volumes:
+      - /root/docker/myapi/appsettings.json:/app/appsettings.json
+    ports:
+      - '80:80'
+    depends_on: #依赖db容器，并不代表执行顺序
+      - db
+      - redis

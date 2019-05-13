@@ -1,0 +1,14 @@
+F:\project\DockerPro\Docker.Api\bin\Debug\netcoreapp2.2\Docker.Api.deps.json
+F:\project\DockerPro\Docker.Api\bin\Debug\netcoreapp2.2\Docker.Api.runtimeconfig.json
+F:\project\DockerPro\Docker.Api\bin\Debug\netcoreapp2.2\Docker.Api.runtimeconfig.dev.json
+F:\project\DockerPro\Docker.Api\bin\Debug\netcoreapp2.2\Docker.Api.dll
+F:\project\DockerPro\Docker.Api\bin\Debug\netcoreapp2.2\Docker.Api.pdb
+F:\project\DockerPro\Docker.Api\obj\Debug\netcoreapp2.2\Docker.Api.csproj.CoreCompileInputs.cache
+F:\project\DockerPro\Docker.Api\obj\Debug\netcoreapp2.2\Docker.Api.RazorAssemblyInfo.cache
+F:\project\DockerPro\Docker.Api\obj\Debug\netcoreapp2.2\Docker.Api.RazorAssemblyInfo.cs
+F:\project\DockerPro\Docker.Api\obj\Debug\netcoreapp2.2\Docker.Api.AssemblyInfoInputs.cache
+F:\project\DockerPro\Docker.Api\obj\Debug\netcoreapp2.2\Docker.Api.AssemblyInfo.cs
+F:\project\DockerPro\Docker.Api\obj\Debug\netcoreapp2.2\Docker.Api.RazorTargetAssemblyInfo.cache
+F:\project\DockerPro\Docker.Api\obj\Debug\netcoreapp2.2\Docker.Api.dll
+F:\project\DockerPro\Docker.Api\obj\Debug\netcoreapp2.2\Docker.Api.pdb
+F:\project\DockerPro\Docker.Api\obj\Debug\netcoreapp2.2\Docker.Api.csprojAssemblyReference.cache
